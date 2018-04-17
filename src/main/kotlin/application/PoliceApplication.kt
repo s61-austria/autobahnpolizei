@@ -6,14 +6,13 @@ import tornadofx.App
 import tornadofx.Stylesheet
 import tornadofx.c
 import tornadofx.px
-import views.HelloWorldView
 import views.MapView
 
 fun main(args: Array<String>) {
     Application.launch(PoliceApplication::class.java, *args)
 }
 
-class PoliceApplication: App(MapView::class, Styles::class)
+open class PoliceApplication : App(MapView::class, Styles::class)
 
 class Styles : Stylesheet() {
     init {
