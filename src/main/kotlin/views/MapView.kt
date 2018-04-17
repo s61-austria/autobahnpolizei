@@ -1,7 +1,7 @@
 package views
 
 import com.google.gson.Gson
-import com.kontofahren.connector.Queue
+import com.kontofahren.connector.Exchange.LOCATION_EXCHANGE
 import com.kontofahren.connector.RabbitGateway
 import com.lynden.gmapsfx.GoogleMapView
 import com.lynden.gmapsfx.MapComponentInitializedListener
@@ -18,6 +18,7 @@ import java.util.UUID
 
 
 class MapView : View(), MapComponentInitializedListener {
+    val DEBUG = true
     override val root = VBox()
     override fun mapInitialized() {
         println("Map initialized")
@@ -36,6 +37,8 @@ class MapView : View(), MapComponentInitializedListener {
                 .zoom(8)
 
         map = mapView.createMap(mapOptions)
+
+        debugView.start()
     }
 
     lateinit var map: GoogleMap
@@ -45,15 +48,20 @@ class MapView : View(), MapComponentInitializedListener {
         prefHeight = 700.0
         prefWidth = 1200.0
     }
+    val debugView = DebugView()
 
     val gateway = RabbitGateway()
 
     var locations = mutableMapOf<UUID, LocationUpdateSerializer>()
+    var markers = mutableMapOf<UUID, Marker>()
 
     init {
         root.add(mapView)
+        root.add(debugView)
 
-        gateway.consume(Queue.FRONTEND_LOCATION_UPDATE, {
+        val queue = gateway.createExclusiveQueue(LOCATION_EXCHANGE)
+
+        gateway.consume(queue, {
             val item = Gson().fromJson(it, LocationUpdateSerializer::class.java)
             runAsync {
                 locations[UUID.fromString(item.vehicleId)] = item
@@ -65,11 +73,15 @@ class MapView : View(), MapComponentInitializedListener {
 
     private fun updateUi() {
         locations.map {
-            val latlng = LatLong(it.value.lat, it.value.lng)
             val markerOptions = MarkerOptions()
-            markerOptions.position(latlng)
-            val marker = Marker(markerOptions)
-            map.addMarker(marker)
+            val latlng = LatLong(it.value.lat, it.value.lng)
+
+            val marker = markers[it.key] ?: Marker(markerOptions).apply {
+                markers[it.key] = this
+                map.addMarker(this)
+            }
+
+            marker.setPosition(latlng)
         }
     }
 }

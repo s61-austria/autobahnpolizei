@@ -2,15 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f9cf6e2c-a6e1-4ba6-aa8b-bf5ca27f2650" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/serializer/LocationUpdateSerializer.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/views/DebugView.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/application/PoliceApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/application/PoliceApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/application/PoliceApplicationKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/application/PoliceApplicationKt.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/application/Styles$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/application/Styles$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/application/Styles.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/application/Styles.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/classes/views/MapView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/views/MapView.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/application/PoliceApplication.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/application/PoliceApplication.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/views/MapView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/views/MapView.kt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -73,8 +67,8 @@
       <file leaf-file-name="PoliceApplication.kt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/kotlin/application/PoliceApplication.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="23" column="5" lean-forward="true" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
+            <state relative-caret-position="306">
+              <caret line="23" column="5" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
               <folding>
                 <element signature="e#21#203#0" expanded="true" />
               </folding>
@@ -85,7 +79,7 @@
       <file leaf-file-name="HelloWorldView.kt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/kotlin/views/HelloWorldView.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
+            <state relative-caret-position="144">
               <caret line="10" column="32" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
               <folding>
                 <element signature="e#15#102#0" expanded="true" />
@@ -94,13 +88,22 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MapView.kt" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MapView.kt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/kotlin/views/MapView.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="10">
-              <caret line="27" column="56" selection-start-line="27" selection-start-column="46" selection-end-line="27" selection-end-column="56" />
+            <state relative-caret-position="384">
+              <caret line="40" column="25" selection-start-line="40" selection-start-column="25" selection-end-line="40" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DebugView.kt" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/kotlin/views/DebugView.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="168">
+              <caret line="16" column="36" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="36" />
               <folding>
-                <element signature="e#15#572#0" expanded="true" />
+                <element signature="e#15#364#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -127,6 +130,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>map</find>
+      <find>google</find>
     </findStrings>
     <replaceStrings>
       <replace>mapView</replace>
@@ -548,6 +552,7 @@
         <option value="$PROJECT_DIR$/src/main/kotlin/serializer/LocationUpdateSerializer.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/application/PoliceApplication.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/views/MapView.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/views/DebugView.kt" />
       </list>
     </option>
   </component>
@@ -571,7 +576,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -625,11 +631,11 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="AndroidView" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SearchEverywhereHistoryKey" value="MapView&#9;FILE&#9;file:///home/requinard/Projects/autobahnpolizei/src/main/kotlin/views/MapView.kt" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -749,44 +755,45 @@
       <updated>1523967621794</updated>
       <workItem from="1523967625674" duration="1484000" />
       <workItem from="1523969380033" duration="63000" />
-      <workItem from="1523969490696" duration="825000" />
+      <workItem from="1523969490696" duration="976000" />
+      <workItem from="1523998918517" duration="2500000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2372000" />
+    <option name="totallyTimeSpent" value="5023000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-1" width="1920" height="1081" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="right" id="Maven Projects" order="3" />
-      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info id="Capture Tool" order="2" />
-      <window_info id="Designer" order="2" />
-      <window_info anchor="bottom" id="Build" order="7" weight="0.32982087" />
-      <window_info anchor="right" id="Database" order="3" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info id="UI Designer" order="2" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.39936775" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Messages" order="7" weight="0.32982087" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50053364" side_tool="true" weight="0.32876712" />
+      <window_info anchor="right" id="Maven Projects" order="3" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32982087" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32983193" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25400212" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4994664" visible="true" weight="0.32982087" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.4994664" weight="0.32876712" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info id="Designer" order="2" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25667024" />
+      <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="right" id="Gradle" order="3" weight="0.32977587" />
       <window_info anchor="right" id="SciView" order="3" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info id="UI Designer" order="2" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39936775" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Build" order="7" weight="0.32982087" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -801,24 +808,51 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/src/main/kotlin/views/MapView.kt</url>
-          <line>67</line>
-          <properties />
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/src/main/kotlin/views/MapView.kt</url>
-          <line>56</line>
-          <properties />
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-      <option name="time" value="3" />
+      <option name="time" value="7" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="18" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/application/PoliceApplication.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="23" column="5" lean-forward="true" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
+          <folding>
+            <element signature="e#21#203#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/views/HelloWorldView.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="32" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
+          <folding>
+            <element signature="e#15#102#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/serializer/LocationUpdateSerializer.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="31" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/views/MapView.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="27" column="56" selection-start-line="27" selection-start-column="46" selection-end-line="27" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="558">
@@ -850,9 +884,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="504">
           <caret line="28" column="23" selection-start-line="28" selection-start-column="23" selection-end-line="28" selection-end-column="23" />
-          <folding>
-            <element signature="e#15#572#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -887,9 +918,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="504">
           <caret line="28" column="23" selection-start-line="28" selection-start-column="23" selection-end-line="28" selection-end-column="23" />
-          <folding>
-            <element signature="e#15#572#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -902,7 +930,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/kotlin/views/HelloWorldView.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
+        <state relative-caret-position="144">
           <caret line="10" column="32" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
           <folding>
             <element signature="e#15#102#0" expanded="true" />
@@ -919,8 +947,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/kotlin/application/PoliceApplication.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="23" column="5" lean-forward="true" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
+        <state relative-caret-position="306">
+          <caret line="23" column="5" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
           <folding>
             <element signature="e#21#203#0" expanded="true" />
           </folding>
@@ -929,10 +957,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/kotlin/views/MapView.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="10">
-          <caret line="27" column="56" selection-start-line="27" selection-start-column="46" selection-end-line="27" selection-end-column="56" />
+        <state relative-caret-position="384">
+          <caret line="40" column="25" selection-start-line="40" selection-start-column="25" selection-end-line="40" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/views/DebugView.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="16" column="36" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="36" />
           <folding>
-            <element signature="e#15#572#0" expanded="true" />
+            <element signature="e#15#364#0" expanded="true" />
           </folding>
         </state>
       </provider>
