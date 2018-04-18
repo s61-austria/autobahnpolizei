@@ -1,8 +1,8 @@
 package com.kontofahren.autobahnpolizei.views
 
 import com.google.gson.Gson
-import com.kontofahren.connector.Exchange.LOCATION_EXCHANGE
-import com.kontofahren.connector.RabbitGateway
+import com.kontofahren.integrationslosung.Exchange.LOCATION_EXCHANGE
+import com.kontofahren.integrationslosung.RabbitGateway
 import com.kontofahren.datenvertrag.LocationUpdateSerializer
 import com.lynden.gmapsfx.GoogleMapView
 import com.lynden.gmapsfx.MapComponentInitializedListener

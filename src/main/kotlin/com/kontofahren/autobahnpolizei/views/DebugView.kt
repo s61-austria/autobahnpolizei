@@ -1,9 +1,9 @@
 package com.kontofahren.autobahnpolizei.views
 
-import com.kontofahren.connector.Exchange.LOCATION_EXCHANGE
-import com.kontofahren.connector.RabbitGateway
-import com.kontofahren.connector.Routing.EMPTY
 import com.kontofahren.datenvertrag.LocationUpdateSerializer
+import com.kontofahren.integrationslosung.Exchange.LOCATION_EXCHANGE
+import com.kontofahren.integrationslosung.RabbitGateway
+import com.kontofahren.integrationslosung.Routing.EMPTY
 import javafx.scene.layout.VBox
 import tornadofx.View
 import java.util.UUID

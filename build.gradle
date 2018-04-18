@@ -28,7 +28,7 @@ dependencies {
     compile "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
     compile 'no.tornado:tornadofx:1.7.15'
     compile group: 'com.lynden', name: 'GMapsFX', version: '2.10.0'
-    compile 'com.github.s61-austria:connector:v1.0'
+    compile 'com.github.s61-austria:integrationslosung:v2.0'
     compile 'com.github.s61-austria:datenvertrag:v1.0.0'
     testCompile group: 'junit', name: 'junit', version: '4.12'
 
