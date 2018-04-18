@@ -1,10 +1,10 @@
-package views
+package com.kontofahren.autobahnpolizei.views
 
 import com.kontofahren.connector.Exchange.LOCATION_EXCHANGE
 import com.kontofahren.connector.RabbitGateway
 import com.kontofahren.connector.Routing.EMPTY
+import com.kontofahren.datenvertrag.LocationUpdateSerializer
 import javafx.scene.layout.VBox
-import serializer.LocationUpdateSerializer
 import tornadofx.View
 import java.util.UUID
 import java.util.concurrent.ThreadLocalRandom
@@ -34,6 +34,6 @@ class DebugView : View() {
     }
 
     init {
-        (0..100).forEach{ carIds.add(UUID.randomUUID())}
+        (0..100).forEach { carIds.add(UUID.randomUUID()) }
     }
 }

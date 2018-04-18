@@ -1,4 +1,4 @@
-package application
+package com.kontofahren.autobahnpolizei.application
 
 import javafx.application.Application
 import javafx.scene.text.FontWeight
@@ -6,7 +6,7 @@ import tornadofx.App
 import tornadofx.Stylesheet
 import tornadofx.c
 import tornadofx.px
-import views.MapView
+import com.kontofahren.autobahnpolizei.views.MapView
 
 fun main(args: Array<String>) {
     Application.launch(PoliceApplication::class.java, *args)

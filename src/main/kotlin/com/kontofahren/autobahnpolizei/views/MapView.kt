@@ -1,8 +1,9 @@
-package views
+package com.kontofahren.autobahnpolizei.views
 
 import com.google.gson.Gson
 import com.kontofahren.connector.Exchange.LOCATION_EXCHANGE
 import com.kontofahren.connector.RabbitGateway
+import com.kontofahren.datenvertrag.LocationUpdateSerializer
 import com.lynden.gmapsfx.GoogleMapView
 import com.lynden.gmapsfx.MapComponentInitializedListener
 import com.lynden.gmapsfx.javascript.`object`.GoogleMap
@@ -12,7 +13,6 @@ import com.lynden.gmapsfx.javascript.`object`.MapTypeIdEnum
 import com.lynden.gmapsfx.javascript.`object`.Marker
 import com.lynden.gmapsfx.javascript.`object`.MarkerOptions
 import javafx.scene.layout.VBox
-import serializer.LocationUpdateSerializer
 import tornadofx.View
 import java.util.UUID
 
